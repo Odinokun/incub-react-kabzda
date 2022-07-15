@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import {Star} from './Star';
-import {Accordion} from './Accordion';
-import {AppTitle} from './AppTitle';
-import {Rating} from './Rating';
+import {Star} from './components/Rating/Star';
+import {Accordion} from './components/Accordion/Accordion';
+import {PageTitle} from './PageTitle';
+import {Rating} from './components/Rating/Rating';
 
 function App() {
   return (
     <div className="App">
-      <AppTitle/>
-      <Rating/>
-      <Accordion/>
+      <PageTitle title='This propsTitle is App component'/>
+      <Rating value={4}/>
+      <Accordion title='This is Accordion Title' collapsed={true}/>
+      <Accordion title='This is Accordion Title' collapsed={false}/>
     </div>
   );
 }
