@@ -11,7 +11,7 @@ export const Accordion: FC<PropsType> = (props) => {
   return (
     <>
       <AccordionTitle title={props.title}/>
-      {props.collapsed ? <AccordionBody/> : <AccordionBody/>}
+      {props.collapsed ? "" : <AccordionBody/>}
     </>
   )
 }
