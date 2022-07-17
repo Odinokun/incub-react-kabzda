@@ -1,0 +1,46 @@
+.onOf {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.onOf.active .onOf__btn:first-child {
+  background-color: darkgreen;
+}
+
+.onOf.active .onOf__btn:nth-child(2) {
+  background-color: tomato;
+}
+
+.onOf.active .onOf__lamp {
+  background-color: darkgreen;
+}
+
+.onOf__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #121212;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+.onOf__btn:first-child {
+  background-color: tomato;
+}
+
+.onOf__btn:nth-child(2) {
+  background-color: darkgreen;
+}
+
+.onOf__lamp {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #121212;
+  border-radius: 50%;
+  background-color: tomato;
+}
